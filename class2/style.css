@@ -1,0 +1,90 @@
+/* selectors */
+*{
+    font-family: cursive;
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* // element selector */
+
+h2{
+    background-color: aqua;
+}
+
+/* Id selector */
+
+#About{
+    background-color: lightblue;
+}
+
+/* class selectors */
+
+.para{
+    color:maroon;
+}
+
+/* combinators */
+
+
+section>img{
+    border-radius: 50px;
+}
+
+body>h1{
+    background-color: rgba(0,0,0,0.1);
+    width: 300px;
+    height: 300px;
+    border:1px solid;
+    padding: 10px;
+    margin:100px auto;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url('https://static.vecteezy.com/system/resources/previews/001/918/692/original/cloud-sky-cartoon-background-blue-sky-with-white-clouds-flat-poster-or-flyer-cloudscape-panorama-pattern-seamless-colored-abstract-fluffy-texture-vector.jpg');
+    background-size: contain;
+    /* background-repeat: no-repeat;
+    background-attachment: fixed; */
+}
+
+#grid{
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+}
+
+img{
+    width: 100%;
+}
+
+#grid img{
+    width: 20%;
+}
+
+form{
+    width: 50%;
+    background-color: lightgreen;
+    padding: 20px;
+    border-radius: 20px;
+    margin:100px auto;
+}
+input,button,textarea{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin:10px 0px;
+    border-radius: 10px;
+}
+
+button{
+    background-color: darkgreen;
+}
+
+button:hover{
+    background:green;
+}
+button:active{
+    background-color: lawngreen;
+}
+
