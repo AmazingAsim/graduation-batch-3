@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* #box{
+    background-color:lightgreen;
+    width: 200px;
+    height: 200px;
+    margin:50px auto;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction:normal;
+    animation-timing-function: linear;
+    animation-fill-mode:both ;
+}
+
+@keyframes spin {
+    from{
+        background-color: red;
+        transform: rotate(0deg);
+    }
+    to{
+        background-color: yellow;
+        transform: rotate(360deg);
+
+    }
+} */
+/* 
+h1{
+    width: fit-content;
+    background-color: yellow;
+    position: sticky;
+    
+}
+
+body{
+    height: 2000px;
+} */
