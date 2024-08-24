@@ -1,0 +1,15 @@
+img{
+    width: 100%;
+}
+
+#container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.items{
+    width: 30%;
+}
