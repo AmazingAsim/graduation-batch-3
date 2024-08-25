@@ -21,6 +21,9 @@ let images2 = [
 images2.map(function(i){
     let img = document.createElement('img');
     img.src = i;
+    img.addEventListener('click',function(event){
+        image.src = event.target.src;
+    })
     item2.appendChild(img);
 });
 
@@ -30,6 +33,9 @@ images2.map(function(i){
 images.map(function(i){
     let img = document.createElement('img');
     img.src = i;
+    img.addEventListener('click',function(event){
+        image.src = event.target.src;
+    })
     item1.appendChild(img);
 });
 

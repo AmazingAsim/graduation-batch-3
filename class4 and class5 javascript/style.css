@@ -13,3 +13,14 @@ img{
 .items{
     width: 30%;
 }
+
+#image{
+    position: sticky;
+    top: 0;
+    width: 50%;
+    height: 50vh;
+    display: block;
+    margin:50px auto;
+    object-fit: cover;
+
+}
