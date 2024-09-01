@@ -120,6 +120,8 @@ questions.map(function(q){
     scienceBox.appendChild(div);
 })
 
+let correctAnswers = 0
+
 
 function check(event,answer,option){
     if(answer === option){
@@ -131,5 +133,8 @@ function check(event,answer,option){
     buttons.forEach(function(button){
         button.disabled = true;
     })
- 
  }
+
+ function submit(){
+    alert(`Your score is ${correctAnswers}/10`);
+}

@@ -8,6 +8,8 @@ nav{
     padding: 10px;
     text-align: center;
     background:rgba(0,0,0,0.4);
+    position: sticky;
+    top: 0px;
 }
 
 body{
@@ -49,4 +51,29 @@ nav a{
 .questionbox button:active{
    background: yellow;
    font-weight: bold;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    position: sticky;
+    top:80px;
+}
+
+.flexbox button{
+    border-radius: 10px;
+    border:none;
+    padding: 10px;
+    background:green;
+    color:white;
+    font-weight: bold;
+}
+
+.flexbox button:hover{
+    background:lightgreen;
+}
+
+.flexbox button:active{
+    background-color: yellowgreen;
 }

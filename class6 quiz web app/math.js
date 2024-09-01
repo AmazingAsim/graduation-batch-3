@@ -121,7 +121,7 @@ questions.map(function(q){
     mathBox.appendChild(div);
 })
 
-
+let correctAnswers = 0;
 
 
 function check(event,answer,option){
@@ -136,3 +136,7 @@ function check(event,answer,option){
     })
  
  }
+
+ function submit(){
+    alert(`Your score is ${correctAnswers}/10`);
+}

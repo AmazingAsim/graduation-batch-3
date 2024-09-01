@@ -119,7 +119,7 @@ questions.map(function(q){
     gkBox.appendChild(div);
 })
 
-let correctAnswers = 0
+let correctAnswers = 0;
 
 function check(event,answer,option){
    if(answer === option){
@@ -131,5 +131,8 @@ function check(event,answer,option){
    buttons.forEach(function(button){
        button.disabled = true;
    })
+}
 
+function submit(){
+    alert(`Your score is ${correctAnswers}/10`);
 }
