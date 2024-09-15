@@ -1,10 +1,16 @@
+let bookRepo = require('../repo/book_repo');
 
 function getAllBooks(req,res){
     res.send('Get All Books');
 }
 
-function addBook(req,res){
-    res.send('Add Book');
+async function addBook(req,res){
+    try {
+        let result =await bookRepo.addBook(req.body);
+        res.send({message:"Book Added",data:result});
+    } catch (error) {
+        console.log(error)
+    }
 }
 
 function updateBook(req,res){
