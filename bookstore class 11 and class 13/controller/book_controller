@@ -1,0 +1,23 @@
+
+function getAllBooks(req,res){
+    res.send('Get All Books');
+}
+
+function addBook(req,res){
+    res.send('Add Book');
+}
+
+function updateBook(req,res){
+    res.send('Update Book');
+}
+
+function deleteBook(req,res){
+    res.send('Delete Book');
+}
+
+module.exports = {
+    getAllBooks,
+    addBook,
+    updateBook,
+    deleteBook
+}
