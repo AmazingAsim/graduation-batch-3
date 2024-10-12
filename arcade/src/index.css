@@ -1,0 +1,15 @@
+@import url('../node_modules/bootstrap');
+
+.coinimg{
+    border-radius: 50%;
+    width: 20vw;
+    margin-bottom:20px;
+    transition:1s;
+    animation:flip 1s;
+}
+
+
+@keyframes flip {
+     from{transform: rotateX(0deg)}
+     to{transform: rotateX(720deg)}
+};

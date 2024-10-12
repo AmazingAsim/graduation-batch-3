@@ -1,0 +1,46 @@
+let bookRepo = require('../repo/book_repo');
+
+async function getAllBooks(req,res){
+   try {
+     let result = await bookRepo.getAllBooks();
+     res.send({data:result});
+   } catch (error) {
+     console.log(error)
+   }
+}
+
+async function addBook(req,res){
+    try {
+        let result =await bookRepo.addBook(req.body);
+        res.send({message:"Book Added",data:result});
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+async function updateBook(req,res){
+   try {
+    let bookId = req.body.bookId;
+    let result = await bookRepo.updateBook(bookId,req.body);
+    res.send({message:"Updated",data:result});
+   } catch (error) {
+    
+   }
+}
+
+async function deleteBook(req,res){
+    try {
+        let bookId = req.body.bookId;
+        let result = await bookRepo.deleteBook(bookId);
+        res.send({message:"Deleted",data:result});
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+module.exports = {
+    getAllBooks,
+    addBook,
+    updateBook,
+    deleteBook
+}
