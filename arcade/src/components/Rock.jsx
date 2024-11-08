@@ -6,6 +6,7 @@ export default function Rock() {
   const [result,setResult] = useState('result');
 
   function play(e) {
+    
     // Extract the file name (rock.png, paper.png, or scissor.png) from the src
     const selectedYou = e.target.src.split('/').pop(); 
     setYou(selectedYou);
@@ -58,13 +59,13 @@ export default function Rock() {
 
       <div className="row">
          <div className="col-sm-4">
-              <img onClick={play} class="img-fluid" src="rock.png" />
+              <img onClick={play} class="img-fluid" src="rock.png" role='button' />
          </div>
          <div className="col-sm-4">
-              <img onClick={play} class="img-fluid" src="paper.png" />
+              <img onClick={play} class="img-fluid" src="paper.png" role='button' />
          </div>
          <div className="col-sm-4">
-              <img onClick={play} class="img-fluid" src="scissor.png" />
+              <img onClick={play} class="img-fluid" src="scissor.png"  role='button' />
          </div>
       </div>
 

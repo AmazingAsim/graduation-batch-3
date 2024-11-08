@@ -1,9 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { UserContext } from '../global/userContext'
+import { useContext } from 'react'
 export default function Dashboard() {
+  const [user,setUser] = useContext(UserContext);
   return (
     <div>
-      <h1 className='p-5 text-center bg-dark text-light'>Welcome to Asim's Arcade</h1>
+      <h1 className='p-5 text-center bg-dark text-light'>Welcome {user}</h1>
 
       <div className="container p-2">
           <div className="row">
